@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Sans-Serif;
+  background-image: url(background/wall.jpg);
+  background-color: #2A3A6B;
+}
+
+header h1 {
+  position: absolute;
+  display: block;
+  font-size: 23px;
+  width: 183px;
+  height: 27px;
+  color: #f00;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+section {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #5F6AFF;
+  margin: 0 0 50px 0;
+}
+
+.center {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 560px;
+  background: #8C93F6;
+}
+
+.info {
+  font-size: 22px;
+  display: block;
+  box-shadow: 5px 5px 5px #000000;
+  border: 2px solid #12D500;
+  border-radius: 10px;
+  width: calc(100%-60px);
+  text-align: left;
+  background: #A7D5AF;
+  padding: 100px 30px;
+  margin-bottom: 50px;
+}
+
+.links {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 2px solid #4184FF;
+  border-radius: 10px;
+  width: 100%;
+  background: #6A70BB;
+}
+
+.linksSep {
+  display: inline-block;
+  transform: scale3d(1, 1, 1);
+
+  box-shadow: 5px 5px 5px #000000;
+  border: 2px solid #4184FF;
+  border-radius: 10px;
+  width: 273px;
+  margin: 18px;
+  height: 500px;
+  background: #2E3F71;
+  float: left;
+  padding: 10px;
+  transition: transform 0.1s;
+}
+
+.linksSep h2 {
+  color: #8CADFF;
+  text-shadow: 2px 2px 2px #000000;
+  text-align: center;
+}
+
+.linksSep p {
+  color: #8CADFF;
+  text-align: center;
+}
+
+.imgLink {
+  width: 273px;
+  height: 273px;
+}
+
+.linksSep:hover {
+  transform: scale3d(1.04, 1.04, 1);
+}
+
+.linksSepH {
+  display: inline-block;
+  transform: scale3d(1, 1, 1);
+
+  box-shadow: 5px 5px 5px #000000;
+  border: 2px solid #4184FF;
+  border-radius: 10px;
+  margin: 18px;
+  height: 100px;
+  width: 940px;
+  background: #2E3F71;
+  float: center;
+  padding: 10px;
+  transition: transform 0.1s;
+}
+
+.linksSepH h2 {
+  color: #8CADFF;
+  text-shadow: 2px 2px 2px #000000;
+  text-align: center;
+}
+
+.linksSepH p {
+  color: #8CADFF;
+  text-align: center;
+}
+
+.imgLinkH {
+  width: 100px;
+  height: 100px;
+}
+
+.linksSepH:hover {
+  transform: scale3d(1.02, 1.02, 1);
+}
+
+.imgLink:hover {
+  color: #FFFFFF;
+  filter: brightness(1.2);
+ }
+
+.botBox {
+  width: 100%; 
+  height: 100%;
+}
+
+iframe {
+  width: 100%; 
+  height: 100%;
+}
