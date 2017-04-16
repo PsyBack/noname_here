@@ -20,11 +20,10 @@ header {
 header h1 {
   position: absolute;
   display: block;
-  text-transform: uppercase;
   text-align: center;
   font-size: 32px;
   font-weight: bold;
-  width: 400px;
+  width: 450px;
   height: 27px;
   color: #555;
   top: 0;
