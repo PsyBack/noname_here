@@ -46,47 +46,39 @@ section {
   padding: 0;
 }
 
-.navMenu ul, .navMenu ol {
+.navMenu ul {
   list-style: none;
-}
-
-.navMenu > ul {
   display: flex;
-  justify-content: center;
+  justify-content: center
 }
 
-.navMenu > ul li:first-child {
-  border-left: 2px solid #4184FF;
+.navMenu ul li {
+  width: 100%;
+  position: relative;
+  border-left: 1px solid #4184FF;
+  border-right: 1px solid #4184FF;
 }
 
-.navMenu > ul li:last-child {
-  border-right: 2px solid #4184FF;
+.navMenu i {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  font-size: 25px;
 }
 
-
-.navMenu > ul li a {
+.navMenu ul li a {
+  font-family: Cuprum, Helvetica, Sans-Serif;
+  font-size: 20px;
   display: block;
   background: #ececed;
-  padding: 15px 82px 15px 40px;
-  font-size: 14px;
+  padding: 15px 0px 15px 40px;
   color: #454547;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.navMenu > ul li {
-  position: relative;
-  border-right: 2px solid #4184FF;
-}
-
-.navMenu > ul li > a i.fa {
-  position: absolute;
-  top: 15px;
-  left: 12px;
-}
-
 .navMenu li a:hover {
-  background: #454547;
+  background: #586797;
   color: #ffffff;
   box-shadow: 1px 5px 10px -5px black;
 }
