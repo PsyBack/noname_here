@@ -41,38 +41,54 @@ section {
   margin: 0 auto;
 }
 
-#navMenu {
-  position: relative;
+.MenuLinks {
+  margin: 0;
+  padding: 0;
+}
+
+.navMenu ul, .navMenu ol {
+  list-style: none;
+}
+
+.navMenu > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navMenu > ul li:first-child {
+  border-left: 2px solid #4184FF;
+}
+
+.navMenu > ul li:last-child {
+  border-right: 2px solid #4184FF;
+}
+
+
+.navMenu > ul li a {
   display: block;
-  width: 100%;
-  height: 70px;
-  background: #2E3F71;
-}
-
-#MenuLinks {
-  border: 1px solid #4184FF;
-  background-color: #586797;
-  padding: 5px;
-  margin-top: 0;
-}
-
-.navBut {
-  display: inline-block;
-
-  width: 140px;
-  border: 1px solid #4184FF;
-  box-shadow: 1px 1px 1px #000000;
-  background-color: #2E3F71;
-  padding: 20px;
-  text-align: center;
-  margin-left: 10px;
-}
-
-.navBut a {
-  text-transform: uppercase;
-  font-size: 16px;
-  color: #fff;
+  background: #ececed;
+  padding: 15px 82px 15px 40px;
+  font-size: 14px;
+  color: #454547;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navMenu > ul li {
+  position: relative;
+  border-right: 2px solid #4184FF;
+}
+
+.navMenu > ul li > a i.fa {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+}
+
+.navMenu li a:hover {
+  background: #454547;
+  color: #ffffff;
+  box-shadow: 1px 5px 10px -5px black;
 }
 
 .center {
