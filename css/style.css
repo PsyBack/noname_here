@@ -15,9 +15,11 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 }
 
 header h1 {
+  font-family: Cuprum, Helvetica, Sans-Serif;
   position: absolute;
   display: block;
   text-align: center;
@@ -34,6 +36,36 @@ header h1 {
   padding: 10px 0 15px;
   background: rgba(255,255,255,0.8);
   border: 5px solid #4184FF;
+  border-radius: 10px;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes wave {
+  from {
+    top: 0;
+  }
+  to {
+    top: -15px;
+  } 
+}
+
+#hand {
+  background-image: url(../images/hand.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 50px;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 }
 
 section {
@@ -42,7 +74,6 @@ section {
 }
 
 /* NavMenu */
-
 .navMenu * {
   margin: 0;
   padding: 0;
@@ -101,7 +132,6 @@ section {
   box-shadow: 1px 5px 10px -5px black;
   transition: all 0.3s ease;
 }
-
 /* NavMenu End */
 
 
@@ -138,13 +168,14 @@ footer {
   font-size: 18px;
   display: block;
   border: 1px solid #4184FF;
-  border-radius: 2px;
+  border-radius: 5px;
   width: calc(100%-60px);
   text-align: left;
-  background: #2E3F71;
+  background: #424D71;
   padding: 5px 30px;
   margin-bottom: 50px;
   margin-top: 50px;
+  color: #ffffff;
 }
 
 .info h2 {
@@ -152,10 +183,6 @@ footer {
   margin-bottom: 20px;
   color: #FFFFFF;
   text-shadow: 2px 2px 2px #000000
-}
-
-.info p {
-  color: #FFFFFF;
 }
 
 .info q {
@@ -170,9 +197,9 @@ footer {
   display: block;
   overflow: hidden;
   border: 1px solid #4184FF;
-  border-radius: 1px;
+  border-radius: 5px;
   width: 100%;
-  background: #586797;
+  background: #424D71;
 }
 
 .linksSep {
