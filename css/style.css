@@ -50,7 +50,7 @@ header h1 {
   }
   to {
     top: -15px;
-  } 
+  }
 }
 
 #thumb-box {
@@ -165,10 +165,6 @@ section {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
-.sub-button {
-  background: #ffffff;
-}
 /* NavMenu End */
 
 
@@ -195,13 +191,56 @@ section {
 }
 
 footer {
-  margin-top: 50px; 
+  margin-top: 50px;
   width: 100%;
   height: 560px;
   background: #8C93F6;
 }
 
+
+/* Tabs */
+.tabs > .tab {
+  font-family: Cuprum, Helvetica, Sans-Serif;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  padding: 5px 10px;
+  /* Gradient */
+  background: rgb(195,217,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(195,217,255,1) 0%, rgba(177,200,239,1) 41%, rgba(152,176,217,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(195,217,255,1) 0%,rgba(177,200,239,1) 41%,rgba(152,176,217,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(195,217,255,1) 0%,rgba(177,200,239,1) 41%,rgba(152,176,217,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3d9ff', endColorstr='#98b0d9',GradientType=0 ); /* IE6-9 */
+  /* Gradient End */
+  margin: 2px 2px 0 0;
+  border-radius: 5px 5px 0 0;
+  border: none;
+}
+
+.tabs > .tab:hover {
+  /* Gradient */
+  background: rgb(195,217,255); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(195,217,255,1) 0%, rgba(46,63,113,1) 52%, rgba(152,176,217,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(195,217,255,1) 0%,rgba(46,63,113,1) 52%,rgba(152,176,217,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(195,217,255,1) 0%,rgba(46,63,113,1) 52%,rgba(152,176,217,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3d9ff', endColorstr='#98b0d9',GradientType=0 ); /* IE6-9 */
+  /* Grdient End */
+  color: #ffffff;
+}
+
+.tabs {
+  width: 250px;
+  margin: 20px;
+}
+
+.active {
+  font-weight: bold;
+}
+/* Tabs End */
+
 .info {
+  clear: both;
   font-size: 18px;
   display: block;
   border: 1px solid #4184FF;
@@ -215,14 +254,14 @@ footer {
   color: #ffffff;
 }
 
-.info h2 {
+.info-sep h2 {
   font-size: 28px;
   margin-bottom: 20px;
   color: #FFFFFF;
   text-shadow: 2px 2px 2px #000000
 }
 
-.info q {
+.info-sep q {
   color: #FFFFFF;
   font-size: 15px;
   display: block;
@@ -318,11 +357,11 @@ footer {
  }
 
 .botBox {
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
 
 iframe {
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
