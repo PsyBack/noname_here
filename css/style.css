@@ -34,8 +34,8 @@ header h1 {
   right: 0;
   margin: auto;
   padding: 10px 0 15px;
-  background: rgba(255,255,255,0.8);
-  border: 5px solid #4184FF;
+  background: rgba(255,255,255,0.7);
+  border: 5px solid #3982CF;
   border-radius: 10px;
   animation-name: wave;
   animation-duration: 1s;
@@ -53,14 +53,46 @@ header h1 {
   } 
 }
 
-#hand {
-  background-image: url(../images/hand.png);
+#thumb-box {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  left: 100px;
+  top: 55px;
+  float: left;
+}
+
+#thumb {
+  background-image: url(../images/thumb.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 50px;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  transform: scale(-1, 1);
+}
+
+#thumb-box2 {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  left: 740px;
+  top: 55px;
+  float: left;
+}
+
+#thumb-2 {
+  background-image: url(../images/thumb.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
   animation-name: wave;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -131,6 +163,11 @@ section {
   color: #ffffff;
   box-shadow: 1px 5px 10px -5px black;
   transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sub-button {
+  background: #ffffff;
 }
 /* NavMenu End */
 
